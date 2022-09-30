@@ -1,19 +1,20 @@
 /****************************************Copyright (c)****************************************************
 **                      Beijing Huatai Industrial Equipment Co.,Ltd.
 **                                      
-**                                 http://www.huatai.com.cn
+**                                 http://www.huatai.com.cn                              
 **
 **--------------File Info---------------------------------------------------------------------------------
-** File name:               MenuPage_target.h
-** Latest modified Date:    2021-09-22
-** Latest Version:          1.0.0
-** Descriptions:            菜单页头文件合集
+** File name:               MasterTime.h
+** Latest modified Date:    2021-12-27
+** Latest Version:          1.0
+** Descriptions:            主控时间菜单头文件
 **
 **--------------------------------------------------------------------------------------------------------
 ** Created by:              超人力霸王
-** Created date:            2021-09-22
-** Version:                 1.0.0
+** Created date:            2021-12-27
+** Version:                 1.0
 ** Descriptions:            The original version
+**
 **--------------------------------------------------------------------------------------------------------
 ** Modified by:             
 ** Modified date:           
@@ -21,30 +22,25 @@
 ** Descriptions:            
 **
 *********************************************************************************************************/
-#ifndef __MENU_PAGE_TARGET_H
-#define __MENU_PAGE_TARGET_H
+#ifndef __MASTER_TIME_H
+#define __MASTER_TIME_H
 
 #ifdef __cplusplus
 extern "C" {
 #endif                                                                  /*  __cplusplus                 */
-#include ".\00AuxAction\AuxAction.h"
-#include ".\01BasicCfg\BasicCfg.h"
-#include ".\02GlobalCfg\GlobalCfg.h"
-#include ".\03AsqCfg\AsqCfg.h"
-#include ".\08SysInfo\SysInfo.h"
-#include ".\31Slave\Slave.h"
-#include ".\32Self\Self.h"
-#include ".\33Stop\Stop.h"
-#include ".\34Lock\Lock.h"
-#include ".\35KeyLock\KeyLock.h"
-#include ".\36Remote\Remote.h"
-#include ".\99PwdInput\PwdInput.h"
+
+
+
+/*********************************************************************************************************
+  全局变量声明
+*********************************************************************************************************/
+extern const MENU_ITEM_INFO_BASE __GmiibMasterTime;
 
 #ifdef __cplusplus
 }
 #endif                                                                  /*  __cplusplus                 */
 
-#endif                                                                  /*  __MENU_PAGE_TARGET_H        */
+#endif                                                                  /*  __MASTER_TIME_H             */
 
 /*********************************************************************************************************
   END FILE

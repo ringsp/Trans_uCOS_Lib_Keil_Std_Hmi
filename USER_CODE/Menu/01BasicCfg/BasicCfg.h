@@ -1,17 +1,17 @@
 /****************************************Copyright (c)****************************************************
 **                      Beijing Huatai Industrial Equipment Co.,Ltd.
 **                                      
-**                                 http://www.huatai.com.cn
+**                                 http://www.huatai.com.cn  
 **
 **--------------File Info---------------------------------------------------------------------------------
-** File name:               MenuPage_target.h
-** Latest modified Date:    2021-09-22
+** File name:               BasicCfg.h
+** Latest modified Date:    2022-09-17
 ** Latest Version:          1.0.0
-** Descriptions:            菜单页头文件合集
+** Descriptions:            基本参数设置菜单页头文件
 **
 **--------------------------------------------------------------------------------------------------------
 ** Created by:              超人力霸王
-** Created date:            2021-09-22
+** Created date:            2021-09-17
 ** Version:                 1.0.0
 ** Descriptions:            The original version
 **--------------------------------------------------------------------------------------------------------
@@ -21,30 +21,36 @@
 ** Descriptions:            
 **
 *********************************************************************************************************/
-#ifndef __MENU_PAGE_TARGET_H
-#define __MENU_PAGE_TARGET_H
+#ifndef __BASIC_CFG_H
+#define __BASIC_CFG_H
 
 #ifdef __cplusplus
 extern "C" {
 #endif                                                                  /*  __cplusplus                 */
-#include ".\00AuxAction\AuxAction.h"
-#include ".\01BasicCfg\BasicCfg.h"
-#include ".\02GlobalCfg\GlobalCfg.h"
-#include ".\03AsqCfg\AsqCfg.h"
-#include ".\08SysInfo\SysInfo.h"
-#include ".\31Slave\Slave.h"
-#include ".\32Self\Self.h"
-#include ".\33Stop\Stop.h"
-#include ".\34Lock\Lock.h"
-#include ".\35KeyLock\KeyLock.h"
-#include ".\36Remote\Remote.h"
-#include ".\99PwdInput\PwdInput.h"
+
+/*********************************************************************************************************
+** Function name:           miBasicCfgInit
+** Descriptions:            基本参数设置菜单页初始化
+** input parameters:        none
+** output parameters:       none
+** Returned value:          none
+*********************************************************************************************************/
+extern void miBasicCfgInit(void);
+
+/*********************************************************************************************************
+** Function name:           miBasicCfgDel
+** Descriptions:            基本参数设置菜单页卸载
+** input parameters:        none
+** output parameters:       none
+** Returned value:          none
+*********************************************************************************************************/
+extern void miBasicCfgDel (void);
 
 #ifdef __cplusplus
 }
 #endif                                                                  /*  __cplusplus                 */
 
-#endif                                                                  /*  __MENU_PAGE_TARGET_H        */
+#endif                                                                  /*  __BASIC_CFG_H               */
 
 /*********************************************************************************************************
   END FILE
